@@ -35,6 +35,7 @@ body {
   cursor: pointer;
   text-align: center;
   line-height: 500px;
+  user-select: none;
 }
 #text {
   margin: 30px;
@@ -68,4 +69,12 @@ body {
   background-color: #fff !important;
   font-size: 30px !important;
   color: black !important;
+}
+#again {
+  width: 150px;
+  height: 80px;
+  background-color: purple;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 20px;
 }
