@@ -13,30 +13,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%;
+    padding: 3%;
 }
 
 #doors-wrap {
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 28%;
     width: 70%;
 }
 
 #door1, #door2, #door3 {
+    width: 28%;
+    height: 100%;
     font-weight: bold;
     font-size: calc(50px + 10vw);
-    background-color: #62370B;
+    background-color: #1A569F;
     color: #fff;
-    padding: 50px;
-    border: solid #522709 5px;
+    border: solid #0B3262 5px;
     border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 500px;
 }
 
 #text {
     margin: 30px;
-    font-size: 30px;
+    font-size: 40px;
     color: blue;
 }
 
@@ -62,3 +66,10 @@ body {
         font-size: 25px;
     }
 }
+
+.opened {
+    background-color: #fff !important;
+    font-size: 30px !important;
+    color: black !important;
+    line-height: 200px !important;
+} 
