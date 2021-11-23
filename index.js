@@ -50,12 +50,14 @@ $doors.addEventListener('click', (event) => {
             open(event.target)
             let changed = 'changed'
             let win = 'win'
+            $text.textContent = 'You won!'
 
             if (event.target.id[4] == chosen + 1) {
                 changed = 'unchanged'
             }
             if (event.target.id[4] != prizeDoor) {
                 win = 'lose'
+                $text.textContent = 'You lost!'
             }
 
             finished = true
