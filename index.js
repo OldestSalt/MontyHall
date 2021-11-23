@@ -25,6 +25,7 @@ function startGame() {
     console.log(prizeDoor)
     doors[prizeDoor - 1] = 0
     $text.textContent = 'Choose the door'
+    $again.setAttribute('disabled', '')
 }
 
 $doors.addEventListener('click', (event) => {
@@ -60,6 +61,7 @@ $doors.addEventListener('click', (event) => {
                 $text.textContent = 'You lost!'
             }
 
+            $again.removeAttribute('disabled')
             finished = true
 
             document.querySelector(`#${changed} .${win}`).textContent++
